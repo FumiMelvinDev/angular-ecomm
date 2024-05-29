@@ -9,7 +9,7 @@ const app = express();
 const corsOptions = {
   origin: "http://localhost:4200",
   optionsSuccessStatus: 200,
-  methods: "GET, POST",
+  methods: ["POST", "GET", "PUT", "DELETE"],
 };
 
 app.use(cors(corsOptions));
