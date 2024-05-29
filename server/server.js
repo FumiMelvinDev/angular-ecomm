@@ -1,6 +1,5 @@
 const dotenv = require("dotenv").config();
 const express = require("express");
-const fs = require("fs");
 const cors = require("cors");
 const { errorHandler } = require("./middleware/errorMiddleware");
 
@@ -16,6 +15,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(express.json());
+
+// routes
+app.use("/api", require("./routes/product"));
 
 app.use(errorHandler);
 
