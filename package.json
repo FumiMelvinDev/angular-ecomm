@@ -4,7 +4,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server/server.js",
-    "server": "nodemon server/server.js"
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "FumiMelvinDev",
   "license": "ISC",
@@ -16,6 +18,7 @@
     "express-async-handler": "^1.2.0"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.1.2"
   }
 }
