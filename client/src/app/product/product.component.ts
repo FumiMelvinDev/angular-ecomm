@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../Types';
+import { currencyFormatter } from '../../lib/utils';
 
 @Component({
   selector: 'app-product',
@@ -10,4 +11,8 @@ import { Product } from '../../Types';
 })
 export class ProductComponent {
   @Input() product!: Product;
+
+  getFormattedPrice() {
+    return currencyFormatter(this.product.price);
+  }
 }

@@ -1,7 +1,7 @@
-<section class="container">
+<section class="container rounded-lg bg-white border">
   <a href="">
     <div
-      class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 border p-2"
+      class="relative h-80 w-full overflow-hidden sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 p-2"
     >
       <img
         [src]="'../../' + product.image"
@@ -12,30 +12,10 @@
       />
     </div>
   </a>
-  <h2 class="text-xl font-semibold tracking-tight">{{ product.name }}</h2>
-  <p></p>
+  <div class="border-t p-2">
+    <h2 class="text-lg font-medium tracking-tight">{{ product.name }}</h2>
+    <p className="mt-1 text-lg font-medium text-gray-900">
+      {{ getFormattedPrice() }}
+    </p>
+  </div>
 </section>
-
-<!-- <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-    {products.map((product) => (
-      <Link
-        key={product.id}
-        href={`/products/${product.slug}`}
-        hreclassName="group"
-      >
-        <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 border p-2">
-          <Image
-            alt={product.name}
-            width={product.images?.[0].file?.width || 600}
-            height={product.images?.[0].file?.height || 300}
-            src={product.images?.[0].file?.url}
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
-        <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-        <p className="mt-1 text-lg font-medium text-gray-900">
-          {currencyFormatter(product.price)}
-        </p>
-      </Link>
-    ))}
-  </div> -->
