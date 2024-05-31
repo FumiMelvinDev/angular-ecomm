@@ -30,6 +30,9 @@ export interface Options {
 export interface Products {
   products: Product[];
   total: number;
+  page: number;
+  productsPerPage: number;
+  totalPages: number;
 }
 
 export interface Product {
@@ -37,4 +40,14 @@ export interface Product {
   description: string;
   price: number;
   image: string;
+}
+
+export interface Pagination {
+  [params: string]:
+    | string
+    | number
+    | boolean
+    | ReadonlyArray<string | number | boolean>;
+  page: number;
+  productsPerPage: number;
 }

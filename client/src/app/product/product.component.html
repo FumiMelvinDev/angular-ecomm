@@ -14,8 +14,23 @@
   </a>
   <div class="border-t p-2">
     <h2 class="text-lg font-medium tracking-tight">{{ product.name }}</h2>
-    <p className="mt-1 text-lg font-medium text-gray-900">
-      {{ getFormattedPrice() }}
-    </p>
+    <div class="flex items-center justify-between">
+      <p className="mt-1 text-lg font-medium text-gray-900">
+        {{ getFormattedPrice() }}
+      </p>
+      <div class="flex items-center gap-4">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="add_shopping_cart"
+        ></mat-icon>
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="favorite"
+          class="text-red-600"
+        ></mat-icon>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from './api.service';
 import { Observable } from 'rxjs';
-import { Products } from '../../Types';
+import { Pagination, Products } from '../../Types';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +9,7 @@ import { Products } from '../../Types';
 export class ProductsService {
   constructor(private apiService: ApiService) {}
 
-  getAllProducts = (url: string, params: any): Observable<Products> => {
+  getAllProducts = (url: string, params: Pagination): Observable<Products> => {
     return this.apiService.get(url, {
       params,
       responseType: 'json',
