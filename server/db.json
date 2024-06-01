@@ -1,76 +1,95 @@
 {
-    "products": [
-        {
-            "name":"Xbox Series X",
-            "description":"Product description",
-            "price":12495,
-            "image":"assets/images/xbox_x.png"
-        },
-        {
-            "name":"PS5 Slim Digital Edition",
-            "description":"Product description",
-            "price":13690,
-            "image":"assets/images/ps5_slim.jpg"
-        },
-        {
-            "name":"ROG ALLY Z1 Handheld",
-            "description":"Product description",
-            "price":10729,
-            "image":"assets/images/rog_ally.png"
-        },
-        {
-            "name":"Xbox Series S",
-            "description":"Product description",
-            "price":8978,
-            "image":"assets/images/xbox_s.png"
-        },
-        {
-            "name":"PS5 With 2 Controllers",
-            "description":"Product description",
-            "price":14999,
-            "image":"assets/images/ps5.jpg"
-        },
-        {
-            "name":"PS5 Controller Glacier White",
-            "description":"Product description",
-            "price":1644,
-            "image":"assets/images/ps5_controller_white.webp"
-        },
-        {
-            "name":"PS5 Controller Midnight Black",
-            "description":"Product description",
-            "price":1496,
-            "image":"assets/images/ps5_controller_black.jpg"
-        },
-        {
-            "name":"Xbox Series Controller Pulse Red",
-            "description":"Product description",
-            "price":1398,
-            "image":"assets/images/Xbox_controller_red.webp"
-        },
-        {
-            "name":"Xbox Series Controller Shock Blue",
-            "description":"Product description",
-            "price":1399,
-            "image":"assets/images/Xbox_controller_blue.webp"
-        },
-        {
-            "name":"Xbox Series Controller Carbon Black",
-            "description":"Product description",
-            "price":1398,
-            "image":"assets/images/Xbox_controller_black.webp"
-        },
-        {
-            "name":"Xbox Series Controller Robot White",
-            "description":"Product description",
-            "price":1599,
-            "image":"assets/images/Xbox_controller_white.webp"
-        },
-        {
-            "name":"Xbox Rechargeable Battery",
-            "description":"Product description",
-            "price":549,
-            "image":"assets/images/Xbox_battery.webp"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Xbox Series X",
+      "description": "Product description",
+      "price": 12495,
+      "image": "assets/images/xbox_x.png"
+    },
+    {
+      "id": "2",
+      "name": "PS5 Slim Digital Edition",
+      "description": "Product description",
+      "price": 13690,
+      "image": "assets/images/ps5_slim.jpg"
+    },
+    {
+      "id": "3",
+      "name": "ROG ALLY Z1 Handheld",
+      "description": "Product description",
+      "price": 10729,
+      "image": "assets/images/rog_ally.png"
+    },
+    {
+      "id": "4",
+      "name": "Xbox Series S",
+      "description": "Product description",
+      "price": 8978,
+      "image": "assets/images/xbox_s.png"
+    },
+    {
+      "id": "5",
+      "name": "PS5 With 2 Controllers",
+      "description": "Product description",
+      "price": 14999,
+      "image": "assets/images/ps5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "PS5 Controller Glacier White",
+      "description": "Product description",
+      "price": 1644,
+      "image": "assets/images/ps5_controller_white.webp"
+    },
+    {
+      "id": "7",
+      "name": "PS5 Controller Midnight Black",
+      "description": "Product description",
+      "price": 1496,
+      "image": "assets/images/ps5_controller_black.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Xbox Series Controller Pulse Red",
+      "description": "Product description",
+      "price": 1398,
+      "image": "assets/images/Xbox_controller_red.webp"
+    },
+    {
+      "id": "9",
+      "name": "Xbox Series Controller Shock Blue",
+      "description": "Product description",
+      "price": 1399,
+      "image": "assets/images/Xbox_controller_blue.webp"
+    },
+    {
+      "id": "10",
+      "name": "Xbox Series Controller Carbon Black",
+      "description": "Product description",
+      "price": 1398,
+      "image": "assets/images/Xbox_controller_black.webp"
+    },
+    {
+      "id": "11",
+      "name": "Xbox Series Controller Robot White",
+      "description": "Product description",
+      "price": 1599,
+      "image": "assets/images/Xbox_controller_white.webp"
+    },
+    {
+      "id": "12",
+      "name": "Xbox Rechargeable Battery",
+      "description": "Product description",
+      "price": 549,
+      "image": "assets/images/Xbox_battery.webp"
+    },
+    {
+      "id": "13",
+      "name": "Xbox Series X updated 2",
+      "description": "Describe the series X",
+      "price": "12495",
+      "image": "assets/images/xbox_x.png"
+    }
+  ]
 }
