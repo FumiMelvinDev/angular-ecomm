@@ -16,4 +16,22 @@ export class ProductsService {
       observe: 'body',
     });
   };
+
+  addProduct = (url: string, body: any): Observable<any> => {
+    return this.apiService.post(url, body, {
+      observe: 'body',
+    });
+  };
+
+  updateProduct = (url: string, body: any): Observable<any> => {
+    return this.apiService.put(url, body, {
+      observe: 'body',
+    });
+  };
+
+  deleteProduct = (url: string): Observable<any> => {
+    return this.apiService.delete(url, {
+      observe: 'body',
+    });
+  };
 }
