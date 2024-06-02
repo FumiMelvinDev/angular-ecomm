@@ -1,0 +1,41 @@
+<section class="container rounded-lg bg-white border">
+  <a href="">
+    <div
+      class="relative h-80 w-full overflow-hidden sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-36 p-2"
+    >
+      <img
+        [src]="'../../' + product.image"
+        alt="{{ product.name }}"
+        width="150"
+        height="75"
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
+  </a>
+  <div class="border-t p-2">
+    <div class="flex flex-col space-y-2 text-xs">
+      <h2 class="font-medium tracking-tight">{{ product.name }}</h2>
+      <p className="font-light text-gray-900">
+        {{ getFormattedPrice() }}
+      </p>
+      <div class="flex items-center justify-evenly">
+        <div class="example-button-container">
+          <button
+            mat-mini-fab
+            color="primary"
+            aria-label="Example icon button with a filter list icon"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+        <button
+          mat-mini-fab
+          color="warn"
+          aria-label="Example icon button with a filter list icon"
+        >
+          <mat-icon>delete_forever</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

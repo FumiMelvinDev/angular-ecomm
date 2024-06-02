@@ -69,7 +69,7 @@ export class AdminComponent {
       });
   }
 
-  deleteProduct(product: Product, id: number) {
+  deleteProduct(id: number) {
     console.log('delete product');
 
     this.productsService
