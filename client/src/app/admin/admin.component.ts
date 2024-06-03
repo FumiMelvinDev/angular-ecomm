@@ -4,13 +4,19 @@ import { Product, Products } from '../../Types';
 import { ProductsService } from '../services/products.service';
 import { AdminProdCardComponent } from '../admin-prod-card/admin-prod-card.component';
 import { CommonModule } from '@angular/common';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-admin',
   standalone: true,
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css',
-  imports: [CommonModule, MatButtonModule, AdminProdCardComponent],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    AdminProdCardComponent,
+    MatPaginatorModule,
+  ],
 })
 export class AdminComponent {
   constructor(private productsService: ProductsService) {}
@@ -18,7 +24,7 @@ export class AdminComponent {
   products: Product[] = [];
 
   totalRecords: number = 0;
-  pageSize: number = 8;
+  pageSize: number = 18;
 
   onPageChage(event: any) {
     this.fetchProducts(event.page, event.pageSize);

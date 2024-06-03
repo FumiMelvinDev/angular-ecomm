@@ -1,4 +1,4 @@
-<section class="container rounded-lg bg-white border">
+<section class="container rounded-lg border">
   <a href="">
     <div
       class="relative h-80 w-full overflow-hidden sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-36 p-2"
@@ -15,7 +15,7 @@
   <div class="border-t p-2">
     <div class="flex flex-col space-y-2 text-xs">
       <h2 class="font-medium tracking-tight">{{ product.name }}</h2>
-      <p className="font-light text-gray-900">
+      <p class="font-light text-gray-900">
         {{ getFormattedPrice() }}
       </p>
       <div class="flex items-center justify-evenly">
@@ -24,6 +24,7 @@
             mat-mini-fab
             color="primary"
             aria-label="Example icon button with a filter list icon"
+            (click)="openDialog('500ms', '500ms')"
           >
             <mat-icon>edit</mat-icon>
           </button>
@@ -32,6 +33,7 @@
           mat-mini-fab
           color="warn"
           aria-label="Example icon button with a filter list icon"
+          (click)="openDialog('500ms', '500ms')"
         >
           <mat-icon>delete_forever</mat-icon>
         </button>

@@ -6,3 +6,14 @@
     [product]="product"
   ></app-admin-prod-card>
 </section>
+
+<mat-paginator
+  #paginator
+  (page)="fetchProducts(paginator.pageIndex, paginator.pageSize)"
+  [length]="totalRecords"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[8, 12, 24, 36, 48, 60]"
+  aria-label="Select page"
+  class="mb-8"
+>
+</mat-paginator>
